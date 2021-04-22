@@ -22,19 +22,15 @@ body {
 	background: #fff;
 }
 
-main {
-	margin: 0 auto;
-}
 .nav {
 	width: 100vw;
-
 	position: sticky;
 	top: 0;
 	background-color: #fff;
+	margin-bottom: 126px;
 	&__wrapper {
 		height: 70px;
 		margin: 0 auto;
-		border: 1px solid red;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
@@ -83,6 +79,34 @@ main {
 		}
 	}
 }
+
+.header {
+	max-width: 1440px;
+	margin: 0 auto;
+	padding-left: 135px;
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	gap: 0 30px;
+	border: 1px solid green;
+	&__wrapper {
+		margin-top: 80px;
+		grid-column: 1 / 7;
+	}
+	&__vidbox {
+		position: relative;
+		grid-column-start: 8;
+	}
+	&__video {
+		position: absolute;
+		left: 0;
+		width: 544px;
+	}
+	&__social {
+		position: fixed;
+		right: 0;
+	}
+}
+
 .bg {
 	position: absolute;
 	margin: 0 auto;
@@ -91,8 +115,9 @@ main {
 	&__img {
 		width: 100vw;
 		@media screen and (max-width: 1024px) {
-			width: 1440px;
-			margin: 0;
+			position: absolute;
+			left: 0;
+			right: 0;
 		}
 	}
 }
