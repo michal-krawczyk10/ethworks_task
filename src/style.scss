@@ -21,7 +21,11 @@ html {
 body {
 	background: #fff;
 }
-
+main {
+	max-width: 1440px;
+	margin: 0 auto;
+	padding: 0 135px;
+}
 .nav {
 	width: 100vw;
 	position: sticky;
@@ -83,14 +87,23 @@ body {
 .header {
 	max-width: 1440px;
 	margin: 0 auto;
-	padding-left: 135px;
 	display: grid;
 	grid-template-columns: repeat(12, 1fr);
 	gap: 0 30px;
-	border: 1px solid green;
 	&__wrapper {
 		margin-top: 80px;
 		grid-column: 1 / 7;
+	}
+	&__title {
+		font-family: Sen, sans-serif;
+		font-size: 40px;
+		line-height: 56px;
+		color: #fff;
+		margin: 0 0 71px;
+		letter-spacing: 0.2px;
+	}
+	&__form {
+
 	}
 	&__vidbox {
 		position: relative;
@@ -119,5 +132,27 @@ body {
 			left: 0;
 			right: 0;
 		}
+	}
+}
+
+.btn {
+	height: 46px;
+	background-color: $light1;
+	color: #fff;
+	font-family: "Open Sans", sans-serif;
+	font-weight: 600;
+	font-size: 16px;
+	text-align: center;
+	border: none;
+	border-radius: 23px;
+	&__submit {
+		padding: 11px 37px;
+		font-size: 17px;
+	}
+	&__send {
+		padding: 12px 28px;
+	}
+	&__read {
+		padding: 12px 37px 12px 49px;
 	}
 }

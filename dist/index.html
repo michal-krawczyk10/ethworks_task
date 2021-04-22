@@ -7,27 +7,27 @@
 		<title>ethworks-task</title>
 	</head>
 	<body>
-		<main>
-			<nav class="nav">
-				<div class="nav__wrapper">
-					<img src="../src/assets/logo.svg" class="nav__logo" />
-					<div class="nav__links">
-						<a class="nav__btn underline" href="#top">ICO</a>
+		<nav class="nav">
+			<div class="nav__wrapper">
+				<img src="../src/assets/logo.svg" class="nav__logo" />
+				<div class="nav__links">
+					<a class="nav__btn underline" href="#top">ICO</a>
 
-						<a class="nav__btn" href="#team" class="nav__btn">Team</a>
+					<a class="nav__btn" href="#team" class="nav__btn">Team</a>
 
-						<a class="nav__btn" href="#contact">Contact</a>
-					</div>
+					<a class="nav__btn" href="#contact">Contact</a>
 				</div>
-			</nav>
+			</div>
+		</nav>
+		<main>
 			<section class="header">
 				<div class="header__wrapper">
 					<h1 class="header__title">
 						The first fully-automatic social crypto trading platform with real
 						crypto currency
 					</h1>
-					<form class="header__form" method="get">
-						<div class="header__wrapper">
+					<form class="header__form" method="post">
+						<div class="header__form__wrapper">
 							<label class="header__label"
 								>Subscribe and get the lastes information</label
 							><input
@@ -39,11 +39,13 @@
 							/>
 						</div>
 						<div class="header__submit">
-							<input type="submit" value="Subscribe" />
+							<input class="btn btn__submit" type="submit" value="Subscribe" />
 						</div>
 					</form>
 				</div>
-				<div class="header__vidbox"><div><video class="header__video"></video><button>play</button></div></div>
+				<div class="header__vidbox">
+					<div><video class="header__video"></video><button>play</button></div>
+				</div>
 				<div class="header__social">
 					<div>twitter</div>
 					<div>facebook</div>
@@ -122,7 +124,7 @@
 									required
 								/><label>Checkbox</label>
 							</div>
-							<input type="submit" value="Send" />
+							<input class="btn btn__send" type="submit" value="Send" />
 						</form>
 					</div>
 				</section>
@@ -134,7 +136,7 @@
 						<p>Contact us:</p>
 						<a>ihave@nicecoding.io</a>
 					</div>
-					<button>Read Whitepaper</button>
+					<button class="btn btn__read">Read Whitepaper</button>
 				</div>
 				<ul>
 					<li><a>&#169; Copyright</a></li>
