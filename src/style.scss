@@ -32,6 +32,7 @@ main {
 	top: 0;
 	background-color: #fff;
 	margin-bottom: 126px;
+	z-index: 100;
 	&__wrapper {
 		height: 70px;
 		margin: 0 auto;
@@ -103,6 +104,7 @@ main {
 		letter-spacing: 0.2px;
 	}
 	&__form {
+		position: relative;
 	}
 	&__label {
 		display: block;
@@ -115,30 +117,18 @@ main {
 		margin: 3px 0 18px 1px;
 	}
 	&__input {
-		position: relative;
-		&--bg {
-			position: absolute;
-			left: 0;
-			width: 100%;
-			border-radius: 25px;
-			background-color: #fff;
-			height: 46px;
-		}
 	}
 	&__email {
+		height: 46px;
+		left: 0;
+		padding: 12px 160px 14px 20px;
+		width: 100%;
+		border-radius: 25px;
+		background-color: #fff;
+		font-size: 17px;
+		font-family: Sen, sans-serif;
 		border: none;
-		position: absolute;
-		margin: 12px auto 14px 20px;
-		width: 60%;
-		border: none;
-		&::placeholder {
-			font-size: 17px;
-			font-family: Sen, sans-serif;
-			color: $gray1;
-		}
-		&:-webkit-autofill {
-			background-color: #fff;
-		}
+		color: $gray1;
 	}
 	&__submit {
 		position: absolute;
@@ -147,11 +137,16 @@ main {
 	&__vidbox {
 		position: relative;
 		grid-column-start: 8;
-	}
-	&__video {
-		position: absolute;
-		left: 0;
-		width: 544px;
+
+		& > div {
+			position: absolute;
+			left: 0;
+			width: 800%;
+			& > img {
+				width: 100%;
+				max-width: 544px;
+			}
+		}
 	}
 	&__social {
 		position: fixed;
@@ -195,5 +190,21 @@ main {
 	}
 	&__read {
 		padding: 12px 37px 12px 49px;
+	}
+}
+
+.video {
+	position: absolute;
+	width: 544px;
+	height: 382px;
+	&__item {
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		min-width: 100%;
+		max-height: 100%;
+
+		background-size: cover;
+		overflow: hidden;
 	}
 }
