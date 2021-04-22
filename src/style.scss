@@ -9,13 +9,13 @@
 	box-sizing: inherit;
 	text-decoration: none;
 	list-style-type: none;
-	font-size: 16px;
 }
 
 html {
 	box-sizing: border-box;
 	margin: 0;
 	scroll-behavior: smooth;
+	font-size: 16px;
 }
 
 body {
@@ -37,17 +37,45 @@ main {
 	justify-content: space-between;
 	align-items: center;
 	background-color: #fff;
+	@media screen and (max-width: 1024px) {
+		padding: 0 16px;
+	}
 	&__logo {
 		height: 39px;
+		@media screen and (max-width: 425px) {
+			height: 22px;
+		}
 	}
 	&__links {
 		display: flex;
 		justify-content: space-between;
 		width: 217px;
+		@media screen and (max-width: 425px) {
+			width: 183px;
+		}
 	}
 	&__btn {
+		position: relative;
 		font-family: Sen, sans-serif;
 		font-weight: 400;
-		color: #1c2085;
+		color: $blue2;
+		line-height: 19px;
+		display: inline-block;
+		&:after {
+			content: "";
+			position: absolute;
+			width: 125%;
+			transform: scaleX(0);
+			height: 2px;
+			bottom: -6px;
+			left: -12.5%;
+			background-color: $blue7;
+			transform-origin: right;
+			transition: transform 0.25s ease-out;
+		}
+		&:focus:after {
+			transform: scaleX(1);
+			transform-origin: left;
+		}
 	}
 }
