@@ -29,7 +29,7 @@ main {
 		padding: 0 77px;
 	}
 	@media screen and (max-width: 450px) {
-		padding: 0 12px;
+		padding: 0 16px;
 	}
 }
 .nav {
@@ -105,6 +105,7 @@ main {
 		grid-column: 1 / 7;
 		@media screen and (max-width: 1200px) {
 			margin-top: 0;
+			max-width: 613px;
 		}
 	}
 
@@ -115,10 +116,16 @@ main {
 		color: #fff;
 		margin: 0 0 71px;
 		letter-spacing: 0.2px;
+		@media screen and (max-width: 1200px) {
+			width: 100%;
+			max-width: 569px;
+		}
 		@media screen and (max-width: 450px) {
+			width: 100%;
 			font-size: 24px;
 			line-height: 32px;
 			margin: 0 0 48px;
+			height: 160px;
 		}
 	}
 	&__form {
@@ -134,6 +141,13 @@ main {
 		color: #fff;
 		opacity: 0.7;
 		margin: 3px 0 18px 1px;
+		@media screen and (max-width: 1200px) {
+			margin: 0 0 16px;
+		}
+		@media screen and (max-width: 450px) {
+			font-size: 14px;
+			margin: 0 0 8px;
+		}
 	}
 	&__input {
 	}
@@ -148,10 +162,18 @@ main {
 		font-family: Sen, sans-serif;
 		border: none;
 		color: $gray1;
+		@media screen and (max-width: 450px) {
+			padding: 12px 20px 14px 20px;
+			margin-bottom: 16px;
+		}
 	}
 	&__submit {
 		position: absolute;
 		right: 0;
+		@media screen and (max-width: 450px) {
+			position: static;
+			width: 100%;
+		}
 	}
 	&__vidbox {
 		position: relative;
@@ -222,6 +244,22 @@ main {
 	justify-content: center;
 	cursor: pointer;
 	margin-bottom: 168px;
+	@media screen and (max-width: 1200px) {
+		width: calc(100% - 154px);
+		position: absolute;
+		top: 710px;
+	}
+	@media screen and (max-width: 520px) {
+		width: calc(100% - 154px);
+		position: absolute;
+		top: 790px;
+	}
+
+	@media screen and (max-width: 450px) {
+		width: calc(100% - 33px);
+		position: absolute;
+		top: 507px;
+	}
 }
 
 .modal {
@@ -554,7 +592,6 @@ h2 {
 			width: 1440px;
 		}
 		@media screen and (max-width: 450px) {
-
 			height: 800px;
 		}
 	}
@@ -594,7 +631,7 @@ h2 {
 
 .logo {
 	height: 39px;
-	@media screen and (max-width: 425px) {
+	@media screen and (max-width: 450px) {
 		height: 22px;
 	}
 }
