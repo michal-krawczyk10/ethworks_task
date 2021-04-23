@@ -20,12 +20,15 @@ html {
 
 body {
 	background: #fff;
-	overflow: visible;
+
 }
 main {
 	max-width: 1440px;
 	margin: 0 auto;
 	padding: 0 135px;
+	@media screen and (max-width: 1200px) {
+		padding: 0 77px;
+	}
 }
 .nav {
 	width: 100vw;
@@ -86,10 +89,17 @@ main {
 	display: grid;
 	grid-template-columns: repeat(12, 1fr);
 	gap: 0 30px;
+	@media screen and (max-width: 1200px) {
+		display: block;
+	}
 	&__wrapper {
 		margin-top: 80px;
 		grid-column: 1 / 7;
+		@media screen and (max-width: 1200px) {
+			margin-top: 128px;
+		}
 	}
+
 	&__title {
 		font-family: Sen, sans-serif;
 		font-size: 40px;
@@ -134,10 +144,16 @@ main {
 		position: relative;
 		grid-column-start: 8;
 		margin-bottom: 106px;
+		@media screen and (max-width: 1200px) {
+			display: block;
+		}
 		& > div {
 			position: absolute;
 			left: 0;
 			width: 800%;
+			@media screen and (max-width: 1200px) {
+				width: 100%;
+			}
 			& > img {
 				width: 100%;
 				max-width: 544px;
@@ -512,16 +528,17 @@ h2 {
 }
 
 .bg {
-	position: absolute;
-	margin: 0 auto;
-	top: 0;
 	z-index: -100;
+	display: flex;
+	justify-content: center;
 	&__img {
+		position: absolute;
+		top: 0;
+		z-index: -100;
 		width: 100vw;
-		@media screen and (max-width: 1024px) {
-			position: absolute;
-			left: 0;
-			right: 0;
+		max-width: 1600px;
+		@media screen and (max-width: 1200px) {
+			width: 1440px;
 		}
 	}
 }
