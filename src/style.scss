@@ -106,6 +106,7 @@ main {
 	}
 	&__form {
 		position: relative;
+		margin-bottom: 18px;
 	}
 	&__label {
 		display: block;
@@ -138,6 +139,7 @@ main {
 	&__vidbox {
 		position: relative;
 		grid-column-start: 8;
+		margin-bottom: 106px;
 		& > div {
 			position: absolute;
 			left: 0;
@@ -180,8 +182,16 @@ main {
 		}
 	}
 	&__social {
-		position: fixed;
-		right: 0;
+		width: 40px;
+		grid-column-start: 12;
+		margin-top: 488px;
+		margin-left: 70px;
+		&--box {
+			position: fixed;
+		}
+	}
+	&__icon {
+		margin-bottom: 12px;
 	}
 }
 
