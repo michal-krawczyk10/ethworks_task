@@ -3,6 +3,7 @@ $gray1: #576677;
 $gray2: #7f8b98;
 $gray2op: #7f8b984d;
 $gray3: #979797;
+$gray4: #9ca4c7;
 $light-gray: #e7e7e7;
 
 $linear: linear-gradient(#3847b5, #253194);
@@ -18,6 +19,7 @@ $blue4: #3543ae;
 $blue5: #3947b6;
 $blue6: #4250bf;
 $blue7: #5454d4;
+$blue8: #0f81ff;
 
 $light1: #38a5db;
 $light2: #63c7ff;
@@ -27,3 +29,11 @@ $blue-op: rgba(0, 151, 255, 0.3613);
 $orange: #f15a29;
 
 $overlay: #252b4280;
+
+$footerLin: linear-gradient(
+	180deg,
+	#fafbff 0%,
+	#eff1f9 41.68%,
+	#e9ecf6 49.59%,
+	#ced3e8 93.91%
+);
