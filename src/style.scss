@@ -20,6 +20,7 @@ html {
 
 body {
 	background: #fff;
+	overflow-x: hidden;
 }
 main {
 	max-width: 1440px;
@@ -131,6 +132,12 @@ main {
 	&__form {
 		position: relative;
 		margin-bottom: 124px;
+		@media screen and (max-width: 1200px) {
+			margin-bottom: 366px;
+		}
+		@media screen and (max-width: 450px) {
+			margin-bottom: 154px;
+		}
 	}
 	&__label {
 		display: block;
@@ -181,6 +188,11 @@ main {
 		margin-bottom: 106px;
 		@media screen and (max-width: 1200px) {
 			display: block;
+			margin-bottom: 56px;
+		}
+		@media screen and (max-width: 450px) {
+			display: block;
+			margin-bottom: 40px;
 		}
 		& > div {
 			position: absolute;
@@ -188,6 +200,9 @@ main {
 			width: 800%;
 			@media screen and (max-width: 1200px) {
 				width: 100%;
+				position: static;
+				display: flex;
+				justify-content: center;
 			}
 			& > img {
 				width: 100%;
@@ -229,9 +244,18 @@ main {
 	&__social {
 		width: 40px;
 		margin-top: 488px;
+		@media screen and (max-width: 1200px) {
+			display: none;
+			position: fixed;
+			top: 350px;
+			margin: 0;
+		}
 		&--box {
 			position: fixed;
 			right: 94px;
+			@media screen and (max-width: 1200px) {
+				right: 15px;
+			}
 		}
 	}
 	&__icon {
@@ -356,12 +380,18 @@ h2 {
 	&__header {
 		color: $blue1;
 		margin-bottom: 45px;
+		@media screen and (max-width: 1200px) {
+			margin-bottom: 24px;
+		}
 	}
 	&__container {
 		width: 100%;
 		display: flex;
 		justify-content: space-between;
 		margin-bottom: 88px;
+		@media screen and (max-width: 1350px) {
+			overflow-x: auto;
+		}
 	}
 	&__member {
 		width: 270px;
