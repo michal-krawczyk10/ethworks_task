@@ -20,7 +20,6 @@ html {
 
 body {
 	background: #fff;
-	overflow-x: hidden;
 }
 main {
 	max-width: 1440px;
@@ -314,9 +313,12 @@ main {
 			z-index: 200;
 			& > video {
 				width: 100%;
-				padding: 1rem;
+				padding: 16px;
 				background-color: #fff;
 				border-radius: 20px;
+				@media screen and (max-width: 768px) {
+					padding: 8px;
+				}
 			}
 		}
 	}
@@ -328,6 +330,14 @@ main {
 		width: 630px;
 		background-color: #fff;
 		border-radius: 20px;
+		@media screen and (max-width: 768px) {
+			width: calc(100% - 32px);
+			margin: 0 16px;
+			top: 32px;
+			height: calc(100vh - 64px);
+			overflow-y: auto;
+			-webkit-overflow-scrolling: touch;
+		}
 	}
 	&__name {
 		padding-top: 72px;
@@ -354,6 +364,13 @@ main {
 		font-size: 18px;
 		line-height: 24px;
 		color: $dark-gray;
+		@media screen and (max-width: 1200px) {
+			margin: 0 22px 0 21px;
+		}
+		@media screen and (max-width: 768px) {
+			margin: 0 15px 0 15px;
+			padding-bottom: 33px;
+		}
 	}
 	&__close {
 		position: absolute;
