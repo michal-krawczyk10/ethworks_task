@@ -106,7 +106,7 @@ main {
 	}
 	&__form {
 		position: relative;
-		margin-bottom: 18px;
+		margin-bottom: 124px;
 	}
 	&__label {
 		display: block;
@@ -193,6 +193,12 @@ main {
 	&__icon {
 		margin-bottom: 12px;
 	}
+}
+.go-down {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	cursor: pointer;
 }
 
 .modal {
