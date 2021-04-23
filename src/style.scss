@@ -20,6 +20,7 @@ html {
 
 body {
 	background: #fff;
+	overflow-x: hidden;
 }
 main {
 	max-width: 1440px;
@@ -244,9 +245,12 @@ main {
 		width: 40px;
 		margin-top: 488px;
 		@media screen and (max-width: 1200px) {
-			display: none;
 			position: fixed;
 			top: 350px;
+			margin: 0;
+		}		@media screen and (max-width: 768px) {
+			position: fixed;
+			top: 260px;
 			margin: 0;
 		}
 		&--box {
