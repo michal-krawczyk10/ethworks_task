@@ -8,6 +8,10 @@ const video = document.querySelector(".video--js");
 
 playBtn.addEventListener("click", () => {
 	modal.classList.add("show");
-	body.classList.add("noscroll");
 	video.play();
+});
+
+modal.addEventListener("click", () => {
+	video.pause();
+	modal.classList.remove("show");
 });
