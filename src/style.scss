@@ -235,6 +235,44 @@ main {
 			}
 		}
 	}
+	&__member {
+		position: relative;
+		z-index: 200;
+		width: 630px;
+		background-color: #fff;
+		border-radius: 20px;
+	}
+	&__name {
+		padding-top: 72px;
+		margin: 0 0 24px 0;
+		font-size: 40px;
+		font-family: Sen, sans-serif;
+		line-height: 34px;
+		text-align: center;
+		color: $light1;
+	}
+	&__position {
+		margin: 0 0 32px 0;
+		font-size: 13px;
+		font-family: "Open Sans", sans-serif;
+		line-height: 15.23px;
+		letter-spacing: 0.26px;
+		text-align: center;
+		color: $dark1op;
+	}
+	&__text {
+		margin: 0 29px 0 31px;
+		padding-bottom: 50px;
+		font-family: Sen, sans-serif;
+		font-size: 18px;
+		line-height: 24px;
+		color: $dark-gray;
+	}
+	&__close {
+		position: absolute;
+		top: 33px;
+		right: 34px;
+	}
 }
 
 h2 {
@@ -253,6 +291,55 @@ h2 {
 .team {
 	&__header {
 		color: $blue1;
+		margin-bottom: 45px;
+	}
+	&__member {
+		width: 270px;
+		cursor: pointer;
+	}
+	&__member2 {
+		width: 271px;
+		cursor: pointer;
+	}
+	&__img {
+		margin-top: 4px;
+		margin-left: 70px;
+		margin-bottom: 16px;
+	}
+	&__img2 {
+		margin-top: 0;
+		margin-left: 66px;
+		margin-bottom: 15px;
+	}
+	&__img4 {
+		margin-left: 69px;
+	}
+	&__name {
+		margin: 0 0 8px 0;
+		color: $light1;
+		font-family: Sen, sans-serif;
+		font-size: 24px;
+		font-weight: 400;
+		line-height: 34px;
+		text-align: center;
+	}
+	&__position {
+		color: $dark1op;
+		margin: 0 0 16px 0;
+		font-family: "Open Sans", sans-serif;
+		font-size: 13px;
+		line-height: 15.23px;
+		letter-spacing: 0.26px;
+		text-align: center;
+	}
+	&__text {
+		color: $dark-gray;
+		margin: 0 0 32px 0;
+		font-family: Sen, sans-serif;
+		font-size: 18px;
+		font-weight: 400;
+		line-height: 24px;
+		text-align: center;
 	}
 	&__icons {
 		display: flex;
