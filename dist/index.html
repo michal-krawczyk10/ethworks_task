@@ -222,58 +222,59 @@
 						</div>
 					</article>
 				</section>
-				<section class="content__contact" id="contact">
-					<div>
-						<h2>CONTACT US</h2>
-						<h4>
-							Most calendars are designed for teams. Slate is designed for
-							freelancers
-						</h4>
-						<form>
-							<input
-								type="text"
-								name="name"
-								id="name"
-								placeholder="Your Name"
-								required
-							/>
-							<input
-								type="text"
-								name="email"
-								id="email"
-								placeholder="Your Email"
-								required
-							/>
-							<div>
-								<input
-									type="checkbox"
-									id="checkbox"
-									name="checkbox"
-									required
-								/><label>Checkbox</label>
-							</div>
-							<input class="btn btn__send" type="submit" value="Send" />
-						</form>
-					</div>
-				</section>
 			</section>
-			<footer>
-				<div>
-					<div>logo</div>
-					<div>
-						<p>Contact us:</p>
-						<a>ihave@nicecoding.io</a>
-					</div>
-					<button class="btn btn__read">Read Whitepaper</button>
-				</div>
-				<ul>
-					<li><a>&#169; Copyright</a></li>
-					<li><a>FAQ</a></li>
-					<li><a>Terms of Use</a></li>
-					<li><a>Privacy Policy</a></li>
-				</ul>
-			</footer>
 		</main>
+		<section class="contact" id="contact">
+			<h2 class="contact__title">CONTACT US</h2>
+			<h4 class="contact__text">
+				Most calendars are designed for teams. Slate is designed for freelancers
+			</h4>
+			<form class="contact__form" method="POST">
+				<input
+					class="contact__input"
+					type="text"
+					name="name"
+					id="name"
+					placeholder="Your Name"
+					required
+				/>
+				<input
+					class="contact__input"
+					type="text"
+					name="email"
+					id="email"
+					placeholder="Your Email"
+					required
+				/>
+				<div class="contact__checkbox">
+					<input
+						class="contact__box"
+						type="checkbox"
+						id="checkbox"
+						name="checkbox"
+						required
+					/><label class="contact__label">Checkbox</label>
+				</div>
+				<input class="btn btn__send" type="submit" value="Send" />
+			</form>
+		</section>
+		<footer>
+			<div>
+				<div>logo</div>
+				<div>
+					<p>Contact us:</p>
+					<a>ihave@nicecoding.io</a>
+				</div>
+				<button class="btn btn__read">Read Whitepaper</button>
+			</div>
+			<ul>
+				<li><a>&#169; Copyright</a></li>
+				<li><a>FAQ</a></li>
+				<li><a>Terms of Use</a></li>
+				<li><a>Privacy Policy</a></li>
+			</ul>
+		</footer>
+
 		<section class="bg">
 			<img class="bg__img" src="../src/assets/bg.svg" />
 			<!-- <div class="bg__shape1"></div>
